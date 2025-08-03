@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import os # استيراد مكتبة نظام التشغيل للوصول إلى متغيرات البيئة
-from httpx import delete
 from langchain_openai import ChatOpenAI # استيراد ChatOpenAI من langchain_openai
 from langchain.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnableSequence,RunnableMap
