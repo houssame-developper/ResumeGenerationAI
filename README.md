@@ -1,5 +1,4 @@
 # ResumeGenerationAI
-# ResumeGenerationAI
 
 🇺🇸 **AI-Powered Resume Generator using FastAPI, LangChain, GPT-4o, and Vanilla TypeScript**  
 🇲🇦 **مولد السيرة الذاتية بالذكاء الاصطناعي باستخدام FastAPI و LangChain و GPT-4o**
