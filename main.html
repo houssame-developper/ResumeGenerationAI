@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form resume</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-800">
+<h1 class="text-white text-bold text-center text-3xl underline">Resume Form</h1>    
+<form class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4" id="form" enctype="multipart/form-data">
+  <!-- Column 1 -->
+  <div class="flex flex-col gap-10 mt-10">
+    <div class="relative group">
+      <input type="text" name="name" id="name" class="block py-4 px-2 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:border-blue-600 peer" placeholder=" " required />
+      <label for="name" class="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Full Name</label>
+    </div>
+    <div class="relative group">
+      <input type="text" name="job" id="job" class="block py-4 px-2 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:border-blue-600 peer" placeholder=" " required />
+      <label for="job" class="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Job</label>
+    </div>
+    <div class="relative group">
+      <input type="text" name="location" id="location" class="block py-4 px-2 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:border-blue-600 peer" placeholder=" " required />
+      <label for="location" class="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Location</label>
+    </div>
+    <div class="relative group">
+      <input type="text" name="phone" id="phone" class="block py-4 px-2 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:border-blue-600 peer" placeholder=" " required />
+      <label for="phone" class="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Phone Number</label>
+    </div>
+    <div class="relative group">
+      <input type="file" name="photo" id="photo" class="block py-4 px-2 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:border-blue-600 peer" />
+      <label for="photo" class="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Personal Photo (not required)</label>
+    </div>
+  </div>
+  <!-- Column 2 -->
+  <div class="flex flex-col gap-5 mt-10">
+    <div class="relative group">
+      <textarea name="profile" id="profile" rows="3" class="block py-4 px-2 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:border-blue-600 peer" placeholder=" " required></textarea>
+      <label for="profile" class="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Profile Summary</label>
+    </div>
+    <div class="relative group">
+      <textarea name="education" id="education" rows="3" class="block py-4 px-2 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:border-blue-600 peer" placeholder=" " required></textarea>
+      <label for="education" class="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Education</label>
+    </div>
+    <div class="relative group">
+      <textarea name="skills" id="skills" rows="3" class="block py-4 px-2 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:border-blue-600 peer" placeholder=" " required></textarea>
+      <label for="skills" class="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Skills</label>
+    </div>
+    <div class="relative group">
+      <textarea name="courses" id="courses" rows="3" class="block py-4 px-2 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:border-blue-600 peer" placeholder=" " required></textarea>
+      <label for="courses" class="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Courses</label>
+    </div>
+    <div class="relative group">
+      <textarea name="experience" id="experience" rows="3" class="block py-4 px-2 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:border-blue-600 peer" placeholder=" " required></textarea>
+      <label for="experience" class="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Experience</label>
+    </div>
+  </div>
+  <!-- Full width for languages and notice -->
+  <div class="md:col-span-2 flex flex-col gap-3">
+    <div class="relative group">
+      <textarea name="links" id="links" rows="2" class="block py-4 px-2 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:border-blue-600 peer" placeholder=" " required></textarea>
+      <label for="links" class="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Links</label>
+    </div>   
+  <div class="md:col-span-2 flex flex-col gap-3">
+    <div class="relative group">
+      <textarea name="languages" id="languages" rows="2" class="block py-4 px-2 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:border-blue-600 peer" placeholder=" " required></textarea>
+      <label for="languages" class="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Languages</label>
+    </div>
+    <div class="relative group">
+      <textarea name="notice" id="notice" rows="2" class="block py-4 px-2 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:border-blue-600 peer" placeholder=" "></textarea>
+      <label for="notice" class="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Notice (optional)</label>
+    </div>
+  </div>
+  <div class="md:col-span-2">
+    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg w-full px-5 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+  </div>
+</form>
+    
+<script src="main.js"></script>    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Downlaod</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-800 -z-10">
+<div id="loading-overlay" class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50 hidden">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-[150px] h-[150px]" viewBox="0 0 300 150" fill="none" stroke="#FFFFFF" stroke-width="15" stroke-linecap="round" stroke-dasharray="300 385" stroke-dashoffset="0">
+    <path d="M275 75c0 31-27 50-50 50-58 0-92-100-150-100-28 0-50 22-50 50s23 50 50 50c58 0 92-100 150-100 24 0 50 19 50 50Z">
+      <animate attributeName="stroke-dashoffset" calcMode="spline" dur="2" values="685;-685" keySplines="0 0 1 1" repeatCount="indefinite"/>
+    </path>
+  </svg>
+</div>
+<section class="py-16">
+  <div class="container mx-auto px-4">
+    <div class="bg-gradient-to-r rounded-2xl p-8 md:p-12 flex flex-col items-center text-center">
+      <h2 class="text-3xl font-bold mb-4 text-white">Download <span class="text-gray-400">File</span></h2>
+      <p class="text-xl max-w-2xl mx-auto mb-6 text-white">
+         Click button to install file
+      </p>
+      <div class="flex flex-col sm:flex-row w-100 lg:100 gap-4 justify-center" id="install">
+        <button class="bg-gray-900 hover:bg-gray-800 text-white font-bold py-4 px-8 rounded-full transition-colors">
+            Install
+        </button>
+        <button id="edit"
+          class="bg-white hover:bg-gray-100 text-gray-900 font-bold py-4 px-8 rounded-full transition-colors flex items-center justify-center">
+          <!-- Phone Icon Placeholder -->
+
+          <svg class="h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 4a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2zM3 16a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2zM10 3a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1V3zM10 9a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1V9zM10 15a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1v-2z" />
+          </svg>
+          Edit
+        </button>
+      </div>
+    </div>
+  </div>
+</section><script src="downloadFile.js"></script>    
+</body>
+</html>
