@@ -1,0 +1,10 @@
+fastapi
+typing
+sqlmodel
+uuid
+shutil
+datetime
+langchain_openai
+langchain
+weasyprint
+dotenv
