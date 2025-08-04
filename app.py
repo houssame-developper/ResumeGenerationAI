@@ -13,8 +13,8 @@ engine = create_engine('sqlite:///db.sqlite')
 app = FastAPI()
 SQLModel.metadata.create_all(engine)
 origins = [
-    "https://resumecv-generation-ai-git-main-houssame-developpers-projects.vercel.app/",
-    "https://resumecv-generation-ai-git-main-houssame-developpers-projects.vercel.app",
+"https://resumecv-generation-ai-psi.vercel.app/",
+"https://resumecv-generation-ai-psi.vercel.app/"
 ]
 # تفعيل CORS
 app.add_middleware(
