@@ -1,11 +1,7 @@
 fastapi
-typing
+typing-extensions
 sqlmodel
-uuid
-shutil
-datetime
-langchain_openai
+langchain-openai
 langchain
 weasyprint
-dotenv
-shutil 
+python-dotenv
