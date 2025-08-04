@@ -8,3 +8,4 @@ langchain_openai
 langchain
 weasyprint
 dotenv
+shutil 
