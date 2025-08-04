@@ -11,7 +11,7 @@ form.addEventListener('submit',async (event: Event) => {
 event.preventDefault();
 const  formData:FormData =  new FormData(form)
 try{
-const response = await fetch('http://127.0.0.1:8000/resume/create',{
+const response = await fetch('https://philosophical-mae-agentaisoluation-caa8ed9f.koyeb.app/resume/create',{
     method:"POST",
     body:formData
 })
