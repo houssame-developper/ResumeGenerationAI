@@ -28,7 +28,7 @@ if (!token) {
          loadingOverlay.classList.remove('hidden');
  
       }
-      const response = await fetch(`http://127.0.0.1:8000/user/${token}`, {
+      const response = await fetch(`https://philosophical-mae-agentaisoluation-caa8ed9f.koyeb.app/user/${token}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json"
