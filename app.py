@@ -14,7 +14,7 @@ app = FastAPI()
 SQLModel.metadata.create_all(engine)
 origins = [
 "https://resumecv-generation-ai-psi.vercel.app/",
-"https://resumecv-generation-ai-psi.vercel.app/"
+"https://resumecv-generation-ai-psi.vercel.app"
 ]
 # تفعيل CORS
 app.add_middleware(
