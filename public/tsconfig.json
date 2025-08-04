@@ -2,11 +2,12 @@
   "compilerOptions": {
     "target": "ES2015",
     "module": "ESNext",
-    "lib": ["ES2015", "DOM"],
+    "outDir": "./public",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "outDir": "./public"
-  }
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["*.ts"],
+  "exclude": ["node_modules"]
 }
