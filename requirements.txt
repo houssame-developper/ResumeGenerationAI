@@ -6,3 +6,4 @@ langchain-openai
 langchain
 weasyprint
 python-dotenv
+python-multipart
