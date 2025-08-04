@@ -46,3 +46,7 @@ ResumeGenerationAI هو تطبيق ويب يقوم بإنشاء سيرة ذات�
 ```bash
 pip install -r requirements.txt
 uvicorn app:app --reload
+
+### link website:
+https://resumecv-generation-ai-psi.vercel.app/
+
