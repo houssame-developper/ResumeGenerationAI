@@ -15,7 +15,7 @@ const formEdit = document.getElementById("form") as HTMLFormElement;
 
 document.addEventListener('DOMContentLoaded', async () => {
   try {
-    const response = await fetch(`http://127.0.0.1:8000/resume/${token}`, {
+    const response = await fetch(`https://philosophical-mae-agentaisoluation-caa8ed9f.koyeb.app/resume/${token}`, {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     });
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!data.photo) data.photo = "No add photo section";
 
         try {
-          const res = await fetch(`http://127.0.0.1:8000/resume/update/${resume_id}`, {
+          const res = await fetch(`https://philosophical-mae-agentaisoluation-caa8ed9f.koyeb.app/resume/update/${resume_id}`, {
             method: "PUT",
             body: formData,
           });
