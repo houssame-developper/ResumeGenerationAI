@@ -13,13 +13,8 @@ engine = create_engine('sqlite:///db.sqlite')
 app = FastAPI()
 SQLModel.metadata.create_all(engine)
 origins = [
-    "localhost:3000/main",
-    "http://localhost:3000",
-    "http://localhost:3000/",
-    "http://localhost:3000/main",
-    "http://localhost:3000/downloadPage",   
-    "http://127.0.0.1:8000",
-
+    "https://resumecv-generation-ai-git-main-houssame-developpers-projects.vercel.app/",
+    "https://resumecv-generation-ai-git-main-houssame-developpers-projects.vercel.app",
 ]
 # تفعيل CORS
 app.add_middleware(
